@@ -30,14 +30,14 @@ class History extends Category{
         echo "Storia \n";
     }
 }
-$attualita = new Attuality();
-$attualita->GetMyCategory();
-$gossip = new Gossip();
-$gossip->GetMyCategory();
-$sport = new Sport();
-$sport->GetMyCategory();
-$storia = new History();
-$storia->GetMyCategory();
+// $attualita = new Attuality();
+// $attualita->GetMyCategory();
+// $gossip = new Gossip();
+// $gossip->GetMyCategory();
+// $sport = new Sport();
+// $sport->GetMyCategory();
+// $storia = new History();
+// $storia->GetMyCategory();
 
 
 
