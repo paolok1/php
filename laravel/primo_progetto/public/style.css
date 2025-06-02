@@ -1,0 +1,14 @@
+.bg-background{
+    background-image: url(/IMG-20240922-WA0008.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.title2{
+    text-align: center;
+
+}
+.textColor{
+    color: white;
+    text-align: center;
+
+}
