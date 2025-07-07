@@ -17,13 +17,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{ route('homepage')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Chi-Siamo">Chi Siamo</a>
+          <a class="nav-link" href="{{ route('chi.siamo')}}">Chi Siamo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/contatti">Contatti</a>
+          <a class="nav-link" href="{{ route('contatti')}}">Contatti</a>
         </li>
       </ul>
     </div>
@@ -32,8 +32,19 @@
 <div class="container-fluid vh-100 bg-background">
     <div class="row h-75 justify-content-center align-items-center">
         <div class="col-12">
-            <h1 class="py-5 text-center textColor display-4 ">CHI SIAMO</h1>
+            <h1 class="py-5 text-center textColor display-4 ">
+              CHI SIAMO
+            </h1>
         </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <ul>
+          @foreach( $employees as $dipendente )
+          <li> {{$dipendente ['name']}} {{$dipendente ['surname']}} </li>
+          @endforeach
+        </ul>
+      </div>
     </div>
 </div>
             
