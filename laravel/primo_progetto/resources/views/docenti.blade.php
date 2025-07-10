@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home Page</title>
+    <title>Docenti</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
   </head>
@@ -33,9 +33,23 @@
     <div class="row h-75 justify-content-center align-items-center">
         <div class="col-12">
             <h1 class="py-5 text-center textColor display-4 title">
-              BENVENUTA {{$titolo}}
+              Docenti
             </h1>
         </div>
+    </div>
+    <div class="row justify-content-center align-items-center text-warning py-5 ">
+        @foreach ($teachers as $teacher) 
+     <div class="col-12 col-md-3">
+        <div class="card mx-auto" style="width: 15rem;">
+          <img src="{{$teacher['foto']}}" class="card-img-top foto" alt="...">
+             <div class="card-body">
+              <h5 class="card-title">{{$teacher['name']}} {{$teacher['surname']}}</h5>
+              <p class="card-text">{{$teacher['subject']}}</p>
+              <a href="{{route('teacher.detail', ['surname'=>$teacher['surname']])}} " class="btn btn-primary">Vai al dettaglio</a>
+        </div> 
+     </div>
+    </div>
+      @endforeach
     </div>
 </div>
             

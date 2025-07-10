@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
-use App\Http\Controllers\EmployeesController;
+use App\Http\Controllers\TeachersController;
+
 // file di ROUTING
 
 // ROTTA NOMINALE: si utilizza il metodo name() per dare il nome ad una rotta, concatenandolo 
@@ -13,12 +14,17 @@ use App\Http\Controllers\EmployeesController;
 
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 
-
-
+// rotta sponsor
 Route::get('/Chi-Siamo', [PublicController::class, 'chiSiamo'])->name('chi.siamo');
+route::get('/sponsor/dettaglio/{id}', [PublicController::class, 'dettaglio'])->name('sponsor.detail');
+// rotta docenti
+Route::get('/docenti',[TeachersController::class, 'docenti'])->name('teachers');
 
-Route::get('/contatti', [PublicController::class, 'contatti'])->name('contatti');
+// pagina di dettaglio dei docenti
+// ROTTA PARAMETRICA è una rotta che accetta un parametro.
 
-// ROTTA PARAMETRICA: è una rotta che accetta un parametro.
+Route::get('/docenti/dettaglio/{surname}', [TeachersController::class, 'dettaglio'])->name('teacher.detail');
 
-Route::get('/employess/dettaglio/{name}', [EmployeesController::class, 'dettaglio'])->name('employees.details');
+
+
+

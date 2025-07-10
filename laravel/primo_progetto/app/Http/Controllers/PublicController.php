@@ -14,23 +14,32 @@ class PublicController extends Controller
 // CHIAVE DELL'ARRAY = NOME DELLA VARIABILE SULLA VISTA.
 // Valore = il nome in sè.
  public function chiSiamo () {
-    $arrayEmployees = [
-        ['name'=> 'Marco', 'surname'=> 'Polo'],
-        ['name'=> 'Cristoforo', 'surname'=> 'Colombo'],
-        ['name'=> 'Amerigo', 'surname'=> 'Vespucci'],
-        ['name'=> 'Ferdinando', 'surname'=> 'Magellano'],
+    $arraySponsor = [
+      ['id'=> 1 , 'name'=> 'Nike', 'city'=> 'Milano', 'logo'=>'/nike.jpg'],
+      ['id'=> 2 , 'name'=> 'Ellesse', 'city'=> 'Roma', 'logo'=>'/ellesse.jpg'],
+        ['id'=> 3,'name'=> 'Maybeline', 'city'=> 'New York', 'logo'=>'/maybelline.png'],
+        ['id'=> 4, 'name'=> 'Guess', 'city'=> 'Londra', 'logo'=>'/guess.jpg'],
     ];
-    return view('chiSiamo', ['employees'=> $arrayEmployees]);
+    return view('chiSiamo', ['sponsor'=> $arraySponsor]);
+
+    
   }
-
- public function contatti () { 
-    $arrayContacts = [
-        ['name'=>'Cristoforo', 'surname'=>'Colombo', 'phone'=>'3332223232', 'foto'=>'/colombo1.jpg', 'alt'=>'immagine Cristoforo Colombo'],
-        ['name'=>'Marco', 'surname'=>'Polo', 'phone'=>'2223334343', 'foto'=>'/Polo.jpg', 'alt'=>'immagine Marco Polo '],
-        ['name'=>'Amerigo', 'surname'=>'Vespucci', 'phone'=>'34333344465', 'foto'=>'/Vespucci.jpg', 'alt'=>'immagine Amerigo Vespucci'],
-        ['name'=>'Ferdinando', 'surname'=>'Magellano', 'phone'=>'555434323', 'foto'=>'/Magellano.jpg', 'alt'=>'immagine Ferdinando Magellano'],
-
+  public function dettaglio($id){
+       $arraySponsor = [
+        ['id'=> 1 , 'name'=> 'Nike', 'city'=> 'Milano', 'logo'=>'/nike.jpg'],
+        ['id'=> 2 , 'name'=> 'Ellesse', 'city'=> 'Roma', 'logo'=>'/ellesse.jpg'],
+        ['id'=> 3,'name'=> 'Maybeline', 'city'=> 'New York', 'logo'=>'/maybelline.png'],
+        ['id'=> 4, 'name'=> 'Guess', 'city'=> 'Londra', 'logo'=>'/guess.jpg'],
     ];
-        return view('contatti', ['contacts'=>$arrayContacts]);
- }
+    foreach ($arraySponsor as $marchio) {
+      if ($id == $marchio['id']) {
+      return view('sponsor.sponsorDetail', ['marchio'=>$marchio]);
+    }
+  }
+}
+       
+
+  
+
+
 }

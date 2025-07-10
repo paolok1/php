@@ -17,34 +17,39 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{ route('homepage')}}">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ route('chi.siamo')}}">Chi Siamo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('contatti')}}">Contatti</a>
+          <a class="nav-link" href="{{ route('teachers')}}">Dettagli</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="container-fluid vh-100 bg-background">
+<div class="container-fluid vh-100 bg-background img-fluid">
     <div class="row h-75 justify-content-center align-items-center">
         <div class="col-12">
-            <h1 class="py-5 text-center textColor display-4 ">
-              CHI SIAMO
+            <h1 class="py-5 text-center textColor display-4 title">
+              I nostri Sponsor
             </h1>
         </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <ul>
-          @foreach( $employees as $dipendente )
-          <li> {{$dipendente ['name']}} {{$dipendente ['surname']}} </li>
-          @endforeach
-        </ul>
-      </div>
+    <div class="row justify-content-center align-items-center text-warning py-5 ">
+        @foreach ($sponsor as $sponsor) 
+     <div class="col-12 col-md-3">
+        <div class="card mx-auto" style="width: 15rem;">
+          <img src="{{$sponsor['logo']}}" class="logo" class="card-img-top foto" alt="...">
+             <div class="card-body">
+              <h5 class="card-title">{{$sponsor['name']}} {{$sponsor['city']}}</h5>
+              <p class="card-text">{{$sponsor['name']}} {{$sponsor['city']}}</p>
+              <a href="{{route('sponsor.detail', ['id'=>$sponsor['id']])}}" class="btn btn-primary">Vai al dettaglio</a>
+        </div> 
+     </div>
+    </div>
+      @endforeach
     </div>
 </div>
             
