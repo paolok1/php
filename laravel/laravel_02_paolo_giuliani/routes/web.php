@@ -1,0 +1,24 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicController;
+use App\Http\Controllers\TeachersController;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
+
+// rotta sponsor
+Route::get('/Chi-Siamo', [PublicController::class, 'chiSiamo'])->name('chi.siamo');
+route::get('/sponsor/dettaglio/{id}', [PublicController::class, 'dettaglio'])->name('sponsor.detail');
+// rotta docenti
+Route::get('/docenti',[TeachersController::class, 'docenti'])->name('teachers');
+
+// pagina di dettaglio dei docenti
+Route::get('/docenti/dettaglio/{surname}', [TeachersController::class, 'dettaglio'])->name('teacher.detail');
+
+
+
