@@ -1,5 +1,5 @@
 .bg-background{
-    background-image: url(/IMG-20240922-WA0008.jpg);
+    background-image: url('../../public/IMG-20240922-WA0008.jpg');
     background-size: cover;
     background-position: center;
 }
