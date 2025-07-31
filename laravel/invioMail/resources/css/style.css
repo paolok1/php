@@ -1,0 +1,28 @@
+.bg-custom{
+    background-image: url(../../public/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title{
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.height-custom{
+    height: 50vh;
+}
+
+.box-bg{
+    background-color: rgb(117, 132, 153, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13px);
+}
+
+.form-label{
+    color:rgb(23, 180, 106);
+    font-weight: bold;
+}
+
