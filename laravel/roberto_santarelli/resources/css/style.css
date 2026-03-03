@@ -1,0 +1,52 @@
+body {
+padding-top: 100px;
+background-color: #f8f9fa;
+font-family: 'Unna', serif;
+}
+
+/* Font Artistico */
+.cherish-regular {
+font-family: 'Cherish', cursive;
+}
+
+/* Navbar Grigia come la Home */
+.navbar {
+background-color: #6c757d !important;
+}
+
+.navbar .nav-link, .navbar .navbar-brand {
+color: rgb(0, 0, 0) !important;
+font-family: 'Cherish', cursive;
+font-size: 1.2rem;
+}
+
+/* Card Gialla Anti-Scoppio */
+.custom-card {
+height: 100%;
+border: none;
+background-color: #fdfd96;
+color: #000;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+display: flex;
+flex-direction: column;
+}
+
+.card-img-top {
+width: 100%;
+height: 300px;
+object-fit: cover;
+}
+
+.card-body-custom {
+padding: 1.5rem;
+flex-grow: 1;
+height: fit-content;
+width: fit-content;
+}
+
+/* Titolo Autore */
+.nome-autore-titolo {
+font-family: 'Cherish', cursive;
+font-size: 4rem;
+color: #333;
+}
