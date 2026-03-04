@@ -1,76 +1,17 @@
-
-
-.cherish-regular {
-  font-family: "Cherish", cursive;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.cherish-regularOpere {
-  font-family: "Cherish", cursive;
-  font-size: 70px;
-  font-weight: 700;
-  font-style: normal;
-  color: whitesmoke;
-}
-
-.cherish-regularBiografia {
-  font-family: "Cherish", cursive;
-  font-size: 50px;
-  font-weight: 700;
-  font-style: normal;
-  color: #FFFB90;
-  }
-
-.bg_biog{
-  background-color: #FFFB90;
-}
-
-
-
-.fontSize{
-  font-size: 20px;
-  
-}
-
 .sfondo {
   background-image: url(/sfondo.jpg);
   background-position: top;
   background-size: cover;
 }
 
-.sfondoOpere {
-  background-image: url(/sfondo_opere.jpg);
-}
-
-.sfondo3{
-  background-image: url(/sfondo3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.nomeAutore{
-  margin-top: 100px;
-}
-
-/* cards */
 
 
-.card-body{
-  background-color: #FFFB90;
-  color: black;
-  height: 200px;
-  width: 150px;
-}
 
-.card-bodyOpere{
-  text-align: center;
-  height: 200px;
-  width: 150px;
-  /* padding: 3px; */
-}
 
-.card-img-top{
-  height: 200px;
-  width: 150px;
-}
+
+
+
+
+
+
+

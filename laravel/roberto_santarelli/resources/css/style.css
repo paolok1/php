@@ -1,13 +1,40 @@
-body {
+html, body{
 padding-top: 100px;
-background-color: #f8f9fa;
 font-family: 'Unna', serif;
+background-attachment: fixed;
+   
+    /* Copre l'intera area visibile senza distorcere */
+    background-size: cover;
+    
+    /* Centra l'immagine */
+    background-position: center center;
+    
+    /* Evita che l'immagine si ripeta */
+    background-repeat: no-repeat;
+    
+    /* Importante: resetta l'altezza minima per coprire sempre lo schermo */
+    height: 100%;
+    margin: 0;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% dell'altezza visibile */
+}
+
+main, .container-main {
+    flex: 1 0 auto;
+}
+
+
 
 /* Font Artistico */
 .cherish-regular {
 font-family: 'Cherish', cursive;
 }
+
+
 
 /* Navbar Grigia come la Home */
 .navbar {
@@ -24,24 +51,65 @@ font-size: 1.2rem;
 .custom-card {
 height: 100%;
 border: none;
-background-color: #fdfd96;
+/* background-color: #dbd4d4a4; */
 color: #000;
 box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 display: flex;
 flex-direction: column;
+padding: 5px;
+/* background-color: #6c757d; */
 }
 
-.card-img-top {
-width: 100%;
-height: 300px;
-object-fit: cover;
+
+
+/* Contenitore per limitare la larghezza massima su desktop */
+.custom-card-container {
+    max-width: 900px; 
+    margin: 0 auto;
+    
 }
 
+/* Rende le immagini uniformi e previene distorsioni */
+.custom-card-container .card-img-top {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+     
+}
+
+/* Riduzione globale del font e padding interno */
 .card-body-custom {
-padding: 1.5rem;
-flex-grow: 1;
-height: fit-content;
-width: fit-content;
+    padding: 0.75rem;
+    
+}
+
+
+
+.card-body-custom .card-title {
+    font-size: 0.9rem; /* Titolo piccolo */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+   
+}
+
+.card-body-biog{
+    background-color: #6c757d;
+    margin: 0;
+    padding: 10px;
+}
+
+.card-body-custom .card-text {
+    font-size: 0.75rem; /* Testo molto piccolo */
+    line-height: 1.4;
+    color: #6c757d; /* Grigio tipico del text-muted */
+}
+
+/* Stile per il bottone piccolo */
+.btn-sm-custom {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Titolo Autore */
@@ -49,4 +117,36 @@ width: fit-content;
 font-family: 'Cherish', cursive;
 font-size: 4rem;
 color: #333;
+}
+
+/*Carosello pagina Continua  */
+
+/* Limita le dimensioni del carosello */
+.custom-carousel {
+    max-width: 500px; /* Larghezza massima del carosello */
+    margin: 0 auto;   /* Centra il carosello */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Altezza fissa per le immagini e proporzioni mantenute */
+.custom-carousel .carousel-item img {
+    height: 350px;       /* Altezza contenuta */
+    object-fit: contain; /* Mostra l'immagine intera senza tagliarla */
+    background-color: #f8f9fa; /* Sfondo neutro se l'immagine è più stretta del contenitore */
+}
+
+
+
+/* Stile per il testo della biografia */
+.bio-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+}
+/* FOOTER */
+
+footer {
+    flex-shrink: 0;
 }

@@ -13,3 +13,7 @@ Route::get('/opere', function (){
 Route::get('/biografia', function (){
     return view('biografia');
 });
+
+Route::get('/continua', function (){
+    return view('continua');
+});
