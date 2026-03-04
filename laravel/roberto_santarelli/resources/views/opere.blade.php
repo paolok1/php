@@ -10,7 +10,7 @@
                     <p class="card-text">“La vista e i pensieri sono confusi, ma non mi impediscono di percepire con la coda dell’occhio...</p>
                 </div>
                 <div class="card-footer bg-transparent border-top-0 pt-0">
-                    <a href="#" class="btn btn-outline-secondary btn-sm-custom">Leggi di più</a>
+                    <a href="/libro/1" class="btn btn-outline-secondary btn-sm-custom">Leggi di più</a>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
                     <p class="card-text">Un nuovo caso per il capitano Luigi Simeoni. Due cadaveri che portano a galla segreti...</p>
                 </div>
                 <div class="card-footer bg-transparent border-top-0 pt-0">
-                    <a href="#" class="btn btn-outline-secondary btn-sm-custom">Leggi di più</a>
+                    <a href="/libro/2" class="btn btn-outline-secondary btn-sm-custom">Leggi di più</a>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                     <p class="card-text">Il ritrovamento di un cadavere orrendamente mutilato sconvolge la quiete di una cittadina.</p>
                 </div>
                 <div class="card-footer bg-transparent border-top-0 pt-0">
-                    <a href="#" class="btn btn-outline-secondary btn-sm-custom">Leggi di più</a>
+                    <a href="/libro/3" class="btn btn-outline-secondary btn-sm-custom">Leggi di più</a>
                 </div>
             </div>
         </div>
