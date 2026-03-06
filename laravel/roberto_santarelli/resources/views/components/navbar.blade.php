@@ -8,7 +8,7 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="/biografia">Biografia</a></li>
                 <li class="nav-item"><a class="nav-link" href="/opere">Opere</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contatti</a></li>
+
             </ul>
         </div>
     </div>

@@ -5,13 +5,13 @@
         <div class="col-md-8"> <div id="carouselBiografia" class="carousel slide carousel-fade shadow-sm mb-5 custom-carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/roby3.jpg" class="d-block w-100" alt="Biografia 1">
+                        <img src="/roby3.jpg" class="d-block w-100 bg-secondary" alt="Biografia 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="/roby1.jpg" class="d-block w-100" alt="Biografia 2">
+                        <img src="/roby1.jpg" class="d-block w-100 bg-secondary" alt="Biografia 2">
                     </div>
                     <div class="carousel-item">
-                        <img src="/roby2.jpg" class="d-block w-100" alt="Biografia 3">
+                        <img src="/roby2.jpg" class="d-block w-100 bg-secondary" alt="Biografia 3">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselBiografia" data-bs-slide="prev">

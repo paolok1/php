@@ -5,7 +5,7 @@
       <div class="col-12 mb-4 mb-md-0">
         <h6 class="text-uppercase fw-bold mb-3 text-white">Follow Me</h6>
         <section class="d-flex justify-content-center flex-wrap">
-          <a class="btn text-white btn-floating m-1" style="background-color: #4a4f5a;" href="#!" role="button">
+          <a class="btn text-white btn-floating m-1" style="background-color: #4a4f5a;" href="https://www.facebook.com/share/14YPnrGs2S2/" role="button">
             <i class="fab fa-facebook-f"></i>
           </a>
           <a class="btn text-white btn-floating m-1" style="background-color: #4a4f5a;" href="#!" role="button">
@@ -15,6 +15,9 @@
             <i class="fab fa-instagram"></i>
           </a>
         </section>
+        <div>
+            <p class="text-white mt-3">sansa64@libero.it</p>
+        </div>
       </div>
 
 

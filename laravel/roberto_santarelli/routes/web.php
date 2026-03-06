@@ -72,6 +72,11 @@ Route::get('/libro/{id}', function ($id) {
             l’equilibrio, portando alla luce verità sconvolgenti.",
             'immagine' => 'kill.png'
         ],
+        4 => [
+            'titolo' => "La macchia d'inchiostro",
+            'descrizione' => "Tutto nasce da qui",
+            'immagine' => 'macchia.png'
+        ],
     ];
 
     // Se l'ID esiste nell'elenco, passiamo i dati alla vista
