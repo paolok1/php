@@ -23,8 +23,7 @@
         </div>
 
         <div class="col-12 col-md-7 col-lg-8 ps-md-5 d-flex flex-column justify-content-center" style="min-height: 500px;">
-            <h1 class="cherish-regular display-3">Roberto<br>Santarelli</h1>
-            <p class="cherish-regular display-6 text-gray-50">Scrittore e Sognatore</p>
+            <p class="cherish-regular display-6 text-white position-fixed">Scrittore e Sognatore</p>
         </div>
 
     </div>

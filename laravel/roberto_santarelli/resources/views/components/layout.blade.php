@@ -18,12 +18,19 @@
 </head>
 
     <body class="sfondo mb-5">
-      <x-navbar/>
-      <main class="grow">
-        {{$slot}}
-      </main>
+          <x-navbar/>
+          
+          <main class="grow">
+            <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-end" style="z-index: 1030;">
+            <h1 class="cherish-regular pe-3 text-dark position-fixed">Roberto Santarelli</h1>
+          </div>
+        </div>
+            {{$slot}}
+          </main>
 
-      <x-footer/>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+          <x-footer/>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

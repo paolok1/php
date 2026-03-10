@@ -1,4 +1,4 @@
-<footer class="bg-dark text-center mt-auto w-100">
+<footer class="text-center mt-auto h-50 w-100">
   <div class="container p-4 pb-0">
     <div class="row align-items-center">
       
